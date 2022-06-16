@@ -15,7 +15,7 @@ export default class extends AbstractView{
             let card ='';
                 countries.forEach(element => {
                     card += `
-                    <div class="country-card" >
+                    <div class="country-card">
                         <img class="country-img"src="${
                           element.flags.png
                         }" alt=""></img>
@@ -26,10 +26,10 @@ export default class extends AbstractView{
                                 <div class="flex"><p class="margin-right"><b>Population:</b> </p><p> ${element.population.toLocaleString(
                                   "en-US"
                                 )}</p></div>
-                                <div class="flex" ><p class="margin-right" ><b>Region:</b> </p><p>${
+                                <div class="flex" ><p class="margin-right"><b>Region:</b> </p><p>${
                                   element.region
                                 }</p></div>
-                                <div class="flex" ><p class="margin-right" ><b>Capital:</b> </p><p>${
+                                <div class="flex" ><p class="margin-right"><b>Capital:</b> </p><p>${
                                   element.capital
                                 }</p></div>
                                 <button onclick= "window.location.href = '/countries/${element.cca3.toLowerCase()}'">See more details</button>
